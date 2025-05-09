@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#principal{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 3em;
+    border: 2px solid black;
+}
+header{
+    text-align: center;
+}
+header img{
+    max-width: 20%;
+}
+#botones{
+    border-top: 2px solid black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+#botones button{
+    width: 3em;
+    height: 3em;
+    border-radius: 5em;
+}
+#nueva-tarea{
+    margin: 1.5em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+#nueva-tarea input{
+    height: 2em;
+    width: 60%;
+}
+#nueva-tarea button{
+    width: 8em;
+    height: 3em;
+    border-radius: 1em;
+}
+
+#tareas{
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.tarea{
+    margin: 1.5em;
+    border-bottom: 3px dotted grey;
+    display: flex;
+    justify-content: space-between;
+}
+.tarea *{
+    margin: 1em 0;
+}
+.tarea button{
+    align-self: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 5em;
+}

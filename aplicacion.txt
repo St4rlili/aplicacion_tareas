@@ -1,0 +1,5 @@
+Aplicación que permite hacer lista de tareas:
+    -Nombre de la tarea
+    -Ordenadas de + a - reciente
+    - Botón para borrar
+    -Botón para marcar y desmarcar completada(opcional)

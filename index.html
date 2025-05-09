@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <img src="imgs/todo.png" alt="">
+        </header>
+        <div id="botones">
+            <button id="crear-tarea">+</button>
+            <button>?</button>
+        </div>
+        <div hidden id="nueva-tarea">
+                <h3>Introduce la nueva tarea:</h3>
+                <input type="text" name="" id="texto">
+            <button id="confirmar-tarea">Añadir tarea</button>
+        </div>
+        <div id="tareas">
+            <div class="tarea">
+                <h3>tarea1 para probar</h3>
+                <button>-</button>
+            </div>
+            <div class="tarea">
+                <h3>tarea2 para probar</h3>
+                <button>-</button>
+            </div>
+            <div class="tarea">
+                <h3>tarea3 para probar</h3>
+                <button>-</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
