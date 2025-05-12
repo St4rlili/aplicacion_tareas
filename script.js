@@ -15,11 +15,21 @@ $(document).ready(function () {
       let texto = $("#texto").val();
       let nuevaTarea = $("<div></div>").addClass("tarea");
       let titulo = $("<h3></h3>").text(texto);
-      let boton = $("<button>-</button>").addClass("btn-eliminar-tarea");
-      boton.click(function(){
+      let botonCompletada = $("<button>X</button>").addClass("btn-tarea");
+      botonCompletada.click(function(){
+        if(botonCompletada.html()=="✓"){
+        botonCompletada.html("X");
+        }
+        else{
+          botonCompletada.html("✓");
+        }
+      })
+      let botonEliminar = $("<button>-</button>").addClass("btn-tarea");
+      let botones = $("<div></div>").append(botonCompletada,botonEliminar);
+      botonEliminar.click(function(){
       nuevaTarea.remove();
       })
-      nuevaTarea.append(titulo, boton);
+      nuevaTarea.append(titulo, botones);
       $("#tareas").prepend(nuevaTarea);
     })
 })

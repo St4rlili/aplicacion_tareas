@@ -14,8 +14,7 @@ body{
 #principal{
     background-color: #ffe1c2;
     max-width: 70%;
-    margin: 0 auto;
-    margin-top: 3em;
+    margin: 3em  auto;
     border: 2px solid black;
 }
 header{
@@ -73,8 +72,9 @@ header img{
 .tarea *{
     margin: 1em 0;
 }
-.btn-eliminar-tarea{
+.btn-tarea{
     font-weight: bold;
+    margin: 0.5em;
     border-color: #b5b0ad;
     align-self: center;
     width: 3em;
