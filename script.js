@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("#confirmar-tarea").click(function(){
       let texto = $("#texto").val();
       let nuevaTarea = $("<div></div>").addClass("tarea");
-      let titulo = $("<h3></h3>").text(texto);
+      let titulo = $("<h3></h3>").text(texto).addClass("posicionamiento");
       let botonCompletada = $("<button>X</button>").addClass("btn-tarea");
       botonCompletada.click(function(){
         if(botonCompletada.html()=="✓"){
