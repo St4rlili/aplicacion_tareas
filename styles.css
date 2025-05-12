@@ -1,8 +1,18 @@
+@font-face {
+  font-family: Caviar;
+  src: url(./caviar_dreams/CaviarDreams.ttf);
+}
+* {
+    font-family: Caviar;
+}
 body{
+    background-image: url("./imgs/fondo.jpeg");
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 #principal{
+    background-color: #ffe1c2;
     max-width: 70%;
     margin: 0 auto;
     margin-top: 3em;
@@ -23,6 +33,8 @@ header img{
     gap: 1.5em;
 }
 #botones button{
+    font-weight: bold;
+    border-color: #b5b0ad;
     width: 3em;
     height: 3em;
     border-radius: 5em;
@@ -34,16 +46,20 @@ header img{
     align-items: center;
 }
 #nueva-tarea input{
+    font-weight: bold;
     height: 2em;
-    width: 60%;
+    width: 50%;
 }
 #nueva-tarea button{
+    font-weight: bold;
+    border-color: #b5b0ad;
     width: 8em;
     height: 3em;
     border-radius: 1em;
 }
 
 #tareas{
+    background-color: #ffffc9;
     border-top: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -57,7 +73,9 @@ header img{
 .tarea *{
     margin: 1em 0;
 }
-.tarea button{
+.btn-eliminar-tarea{
+    font-weight: bold;
+    border-color: #b5b0ad;
     align-self: center;
     width: 3em;
     height: 3em;
